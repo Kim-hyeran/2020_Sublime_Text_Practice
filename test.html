@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>첫 웹 디자인</title>
+	<style type="text/css">
+		#div1 {
+			width: 300px;
+			height: 300px;
+			background-color: pink;
+			color: white;
+			font-weight: bold;
+			text-align: center;
+			line-height: 300px;
+			border: 5px solid skyblue;
+			border-radius: 5px;
+			margin: 15px;
+		}
+		span {
+			display: inline-block;
+			border: 1px solid black;
+			font-size: 15px;
+			color: black;
+		}
+		.class_even {
+			background-color: yellow;
+		}
+	</style>
+
+</head>
+<body>
+	<!-- 선택자 : HTML의 tag를 선택
+	1. 전체 선택자 : 모든 tag 선택(예:*{디자인 옵션})
+					전체 글자 색, 폰트 통일 등
+	2. 태그 선택자 : 해당 tag를 모두 선택(예:태그명{디자인 옵션})
+	3. 아이디 선택자 : 단일 선택, 두 개 이상 선택시 오류 발생(예:#아이디이름{디자인 옵션})
+	4. 클래스 선택자 : 복수 선택자, 한 개만 선택 가능(예:.클래스이름{디자인 옵션})
+	5. 자식 선택자 : div 바로 아래 tag 중 span 한 개, 부모>자식(예:#div1>span)
+	6. 자손 선택자 : div 하위의 모든 tag 중 span 전부, 조상 자식(예 : #div span)
+	7. 형제 선택자 : +형제(특정 tag의 바로 다음에 오는 tag), ~형제(특정 tag의 아래 전부) -->
+	<div id="div1">호호호</div>
+	<div>
+		<span class="class_even">JAVA</span>
+		<span>C#</span>
+		<span class="class_even">Python</span>
+		<span>Delphi</span>
+
+	<div></div>
+	<div>
+		<div></div>
+		<div>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+
+	</div>
+	<!-- body : 실질적인 내용 부분 -->
+	<!-- 주석 단축키 : ctrl+shift+/ -->
+</body>
+</html>
