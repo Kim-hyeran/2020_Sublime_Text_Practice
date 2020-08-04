@@ -1,132 +1,49 @@
-* {
+body {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
-}
-
-body {
-	background: #555;
-	font-family: sans-serif;
-}
-
-.login-wrapper {
 	height: 100vh;
-	width: 100vw;
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
+	background-color: white;
 }
 
-.form {
+.button a {
+	display: inline-block;
+	font-size: 40px;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	color: #79E5CB;
+	margin: 0 16px;
+	transition: .4s linear;
 	position: relative;
-	width: 100%;
-	max-width: 380px;
-	padding: 80px 40px 40px;
-	background: rgba(0, 0, 0, 0.6);
-	border-radius: 10px;
-	color: white;
-	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
 }
 
-.form::before {
+.button a::before, .button a::after {
 	content: '';
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 50%;
-	height: 100%;
-	background: rgba(100, 250, 250, 0.3);
-	transform: skewX(-26deg);
-	transform-origin: bottom left;
-	border-radius: 0 0 0 9px;
-	pointer-events: none;
-}
-
-.form h2 {
-	text-align: center;
-	letter-spacing: 1px;
-	margin-bottom: 2rem;
-	color: #79E5CB;
-}
-
-.form .input-group {
-	position: relative;
-}
-
-.form .input-group input {
+	box-sizing: border-box;
 	width: 100%;
-	padding: 10px 0;
-	font-size: 1rem;
-	letter-spacing: 1px;
-	margin-bottom: 30px;
-	border: none;
-	border-bottom: 1px solid white;
-	outline: none;
-	background-color: transparent;
-	color: inherit;
-}
-
-.form .input-group label {
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 10px 0;
-	font-size: 1rem;
-	pointer-events: none;
-	transition: .3s ease-out;
-}
-
-.form .input-group input:focus + label,
-.form .input-group input:valid + label {
-	transform: translateY(-18px);
-	color: #79E5CB;
-	font-size: .8rem;
-}
-
-.submit-btn {
-	display: block;
-	margin-left: auto;
-	border: none;
-	outline: none;
-	background: #79E5CB;
-	font-size: 1rem;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	padding: 10px 20px;
-	border-radius: 5px;
-	cursor: pointer;
-}
-
-.forgot-pw {
-	color: inherit;
-}
-
-#forgot-pw {
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	top: 0;
-	left: 0;
-	right: 0;
-	height: 0;
-	z-index: 1;
-	background: white;
-	opacity: 0;
-	transition: 0.6s;
-}
-
-#forgot-pw:target {
 	height: 100%;
-	opacity: 1;
+	left: 0;
+	top: 0;
+	transition: .4s linear;
 }
 
-.close {
-	position: absolute;
-	right: 1.5rem;
-	top: 0.5rem;
-	font-size: 2rem;
-	font-weight: 900;
-	text-decoration: none;
-	color: inherit;
+.button a:hover {
+	transform: scale(.8);
+}
+
+.button a:hover::before {
+	border-left: 4px solid;
+	border-right: 4px solid;
+	transform: skewX(20deg);
+}
+
+.button a:hover::after {
+	border-top: 4px solid;
+	border-bottom: 4px solid;
+	transform: skewY(-20deg);
 }
