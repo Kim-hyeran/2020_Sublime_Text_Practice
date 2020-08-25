@@ -1,0 +1,61 @@
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 10px auto;
+}
+
+.fa-laptop {
+  margin-right: 10px;
+  color: #4a148c;
+}
+
+#container {
+  padding: 10px;
+  width: 890px;
+  height: 80%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+div {
+  padding: 10px;
+}
+
+h4 {
+  border-bottom: 1px solid #ddd;
+  width: 95%;
+  padding: 3px;
+}
+
+#free_board {
+  width: 500px;
+  height: 100%;
+  margin-right: 10px;
+  float: left;
+}
+
+#hot_board,
+#info_board,
+#book_board {
+  display: block;
+  width: 350px;
+  height: 33%;
+  float: right;
+  margin: auto;
+}
+
+p {
+  padding: 5px 5px;
+  font-size: 14px;
+}
